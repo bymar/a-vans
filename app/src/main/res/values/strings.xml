@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">avansoft</string>
     <string name="avansoft_logo">Avansoft Logo</string>
+    <string name="id">Id</string>
+    <string name="email">Email</string>
+    <string name="age">Age</string>
 </resources>
