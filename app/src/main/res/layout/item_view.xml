@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="228dp"
+    android:layout_height="176dp"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/card"
+    android:elevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:fontFamily="@font/ralewaybold"
+        android:textColor="#525251"
+        android:textSize="31sp"
+        android:gravity="top"
+        tools:text="Name" />
+
+    <RelativeLayout
+        android:id="@+id/frame_123"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/name"
+        android:background="#525251" />
+
+    <TextView
+        android:id="@+id/emailtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame_123"
+        android:fontFamily="@font/ralewaybold"
+        android:gravity="top"
+        android:textColor="#525251"
+        android:textSize="16sp"
+        tools:text="Email" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtag"
+        android:fontFamily="@font/ralewayregular"
+        android:gravity="top"
+        android:textColor="#525251"
+        android:textSize="21sp"
+        tools:text="email@example.com" />
+
+    <TextView
+        android:id="@+id/agetag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:fontFamily="@font/ralewaybold"
+        android:gravity="top"
+        android:textColor="#525251"
+        android:textSize="16sp"
+        tools:text="Age" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agetag"
+        android:fontFamily="@font/ralewayregular"
+        android:gravity="top"
+        android:textColor="#525251"
+        android:textSize="21sp"
+        tools:text="25" />
+
+    <TextView
+        android:id="@+id/idtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:fontFamily="@font/ralewaybold"
+        android:gravity="center"
+        android:textColor="#525251"
+        android:textSize="16sp"
+        tools:text="Id" />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idtag"
+        android:fontFamily="@font/ralewayregular"
+        android:gravity="center"
+        android:textColor="#525251"
+        android:textSize="21sp"
+        tools:text="1" />
+
+
+
+</RelativeLayout>
