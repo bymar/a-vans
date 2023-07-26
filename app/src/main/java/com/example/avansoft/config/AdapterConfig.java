@@ -1,4 +1,4 @@
-package com.example.avansoft;
+package com.example.avansoft.config;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,12 +7,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.avansoft.ApiData;
+import com.example.avansoft.R;
+
 import java.util.List;
 
 public class AdapterConfig extends RecyclerView.Adapter<ViewHolderConfig> {
 
-    Context context;
-    List<ApiData> apiDataList;
+    private Context context;
+    private List<ApiData> apiDataList;
 
     public AdapterConfig(Context context, List<ApiData> apiDataList) {
         this.context = context;

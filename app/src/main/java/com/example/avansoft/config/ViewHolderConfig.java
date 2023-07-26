@@ -1,10 +1,12 @@
-package com.example.avansoft;
+package com.example.avansoft.config;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.avansoft.R;
 
 public class ViewHolderConfig extends RecyclerView.ViewHolder {
 
