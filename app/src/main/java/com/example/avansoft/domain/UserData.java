@@ -1,6 +1,6 @@
-package com.example.avansoft;
+package com.example.avansoft.domain;
 
-public class ApiData {
+public class UserData {
 
     private String id;
     private String name;

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.avansoft.ApiData;
+import com.example.avansoft.domain.UserData;
 import com.example.avansoft.R;
 
 import java.util.List;
@@ -15,11 +15,11 @@ import java.util.List;
 public class AdapterConfig extends RecyclerView.Adapter<ViewHolderConfig> {
 
     private Context context;
-    private List<ApiData> apiDataList;
+    private List<UserData> userDataList;
 
-    public AdapterConfig(Context context, List<ApiData> apiDataList) {
+    public AdapterConfig(Context context, List<UserData> userDataList) {
         this.context = context;
-        this.apiDataList = apiDataList;
+        this.userDataList = userDataList;
     }
 
     @NonNull
@@ -30,15 +30,15 @@ public class AdapterConfig extends RecyclerView.Adapter<ViewHolderConfig> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderConfig holder, int position) {
-        holder.nameView.setText(apiDataList.get(position).getName());
-        holder.emailView.setText(apiDataList.get(position).getEmail());
-        holder.ageView.setText(apiDataList.get(position).getAge());
-        holder.idView.setText(apiDataList.get(position).getId());
+        holder.nameView.setText(userDataList.get(position).getName());
+        holder.emailView.setText(userDataList.get(position).getEmail());
+        holder.ageView.setText(userDataList.get(position).getAge());
+        holder.idView.setText(userDataList.get(position).getId());
 
     }
 
     @Override
     public int getItemCount() {
-        return apiDataList.size();
+        return userDataList.size();
     }
 }
